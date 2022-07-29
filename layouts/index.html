@@ -8,12 +8,25 @@
     <link rel="stylesheet" href="/dist/styles.css">
     <title>Form Validation 2</title>
 </head>
-<body>
+<body class="flex flex-col bg-gray-400 h-screen">
 
-<div class="bg-gray-400 h-screen">
-    <h1 class="text-red-600 font-bold text-5xl">Form Validation</h1>
-    <h2 class="font-bold text-2xl text-purple-600">Welcome !!!</h2>
+<!--Header Starts-->
+<div class="flex">
+    <div class="flex p-6 items-center">
+        <img src="/img/ampljacket.jpg" alt="ampljacket" class="h-16 w-16 rounded-full mr-20">
+        <div class="">
+            <h1 class="text-red-600 font-bold text-5xl">Form Validation</h1>
+            <h2 class="font-bold text-2xl text-purple-600">Welcome !!!</h2>
+        </div>
+    </div>
 </div>
+<!--Header Ends-->
 
+<!--Form Starts-->
+<div class="flex border-2 border-red-500">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username"></input>
+</div>
+<!--Form Ends-->
 </body>
 </html>
