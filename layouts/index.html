@@ -8,24 +8,48 @@
     <link rel="stylesheet" href="/dist/styles.css">
     <title>Form Validation 2</title>
 </head>
-<body class="flex flex-col bg-gray-400 h-screen">
+<body>
 
-<!--Header Starts-->
-<div class="flex">
-    <div class="flex p-6 items-center">
-        <img src="/img/ampljacket.jpg" alt="ampljacket" class="h-16 w-16 rounded-full mr-20">
-        <div class="">
-            <h1 class="text-red-600 font-bold text-5xl">Form Validation</h1>
-            <h2 class="font-bold text-2xl text-purple-600">Welcome !!!</h2>
+
+<div class="flex flex-col bg-gray-400 h-screen">
+    <!--Header Starts-->
+    <div class="flex">
+        <div class="flex p-6 items-center">
+            <img src="/img/ampljacket.jpg" alt="ampljacket" class="h-16 w-16 rounded-full mr-20">
+            <div class="">
+                <h1 class="text-red-600 font-bold text-5xl">Form Validation</h1>
+                <h2 class="font-bold text-2xl text-purple-600">Welcome !!!</h2>
+            </div>
         </div>
     </div>
-</div>
-<!--Header Ends-->
+    <!--Header Ends-->
 
-<!--Form Starts-->
-<div class="flex border-2 border-red-500">
-    <label for="username">Username</label>
-    <input type="text" id="username" name="username"></input>
+    <!--Form Starts-->
+    <div class="flex h-screen items-center justify-center ">
+        <div class="bg-white rounded shadow-lg p-6 w-1/3 border-2 rounded">
+
+            <div class="">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+            </div>
+
+            <div class="">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+            </div>
+
+            <div class="">
+                <label for="password">Password</label>
+                <input type="text" id="password" name="password">
+            </div>
+
+            <div class="">
+                <label for="password-confirmation">Confirm Password</label>
+                <input type="text" id="password-confirmation" name="password-confirmation">
+            </div>
+
+        </div>
+    </div>
 </div>
 <!--Form Ends-->
 </body>
