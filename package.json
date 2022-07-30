@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "live-server .",
-    "tw": "tailwind",
+    "tw": "tailwindcss -i ./src/tailwind.css -o ./dist/styles.css",
     "dev2": "tailwindcss -i ./src/tailwind.css -o ./dist/styles.css --watch --verbose"
   }
 }
