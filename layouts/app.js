@@ -28,7 +28,7 @@ if(usernameValue === ""){
     // What should happen
     console.log("Please enter your username!")
     //Another function called
-    alert("Please enter your username!")
+    // alert("Please enter your username!")
 }
 // username.value
 
