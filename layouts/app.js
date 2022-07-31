@@ -23,6 +23,13 @@ console.log(usernameValue)
 // if(what to check){
 //     what should happen
 // }
+// Conditionals
+if(usernameValue === ""){
+    // What should happen
+    console.log("Please enter your username!")
+    //Another function called
+    alert("Please enter your username!")
+}
 // username.value
 
 // Email
