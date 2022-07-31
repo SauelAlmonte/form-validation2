@@ -32,6 +32,9 @@ if(usernameValue === ""){
 }
 // username.value
 
+// Browser examples:
+// const todaysDate = prompt("What's today ?")
+// alert(todaysDate)
 // Email
 const email = document.getElementById("email")
 console.log(email)
