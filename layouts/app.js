@@ -14,7 +14,7 @@ const username = document.getElementById("username")
 
 const usernameValue = username.value
 // Step 2
-console.log(usernameValue)
+// console.log(usernameValue)
 
 // Step 3 If empty
 // A conditional step is required
@@ -24,11 +24,14 @@ console.log(usernameValue)
 //     what should happen
 // }
 // Conditionals
-if(usernameValue === ""){
+if(false){
     // What should happen
     console.log("Please enter your username!")
     //Another function called
     // alert("Please enter your username!")
+//     Alternative to If
+} else {
+    console.log("There is a value")
 }
 // username.value
 
