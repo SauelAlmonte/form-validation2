@@ -10,11 +10,32 @@
 
 // username
 // Step 1 Get DOM element
-const username = document.getElementById("username")
+
+const regForm = document.getElementById('registration-form');
+const username = document.getElementById("username");
 const usernameErr = username.nextElementSibling
-const usernameValue = username.value
+
 // Step 2 add event / modification
-// console.log(usernameValue)
+
+regForm.addEventListener('click', function(e){
+    e.preventDefault()
+
+// const usernameValue = username.value
+
+// Step 3 Check if the value is empty
+    if (username.value === ""){
+// Step 4 If empty Give feedback
+//         usernameErr.className = 'block bg-red-500 text-white'
+        console.log("Please enter username") // in browser
+    } else{
+        console.log("Thank you, ", username.value)
+    }
+})
+
+// Step 4 other, it's ok
+
+
+// Step 5 Give feedback when we register
 
 // Step 3 If empty Give feedback
 // A conditional step is required
@@ -34,23 +55,8 @@ const usernameValue = username.value
 //     console.log(usernameValue)
 // }
 
-// Step 4 other, it's ok
 
 
-// Step 5 Give feedback when we click
-
-const regForm = document.getElementById('registration-form');
-
-regForm.addEventListener('click', function(e){
-    e.preventDefault()
-    // Step 3 If empty Give feedback
-    if (username.value === ""){
-        usernameErr.className = 'block bg-red-500 text-white'
-        // console.log("Please enter username")
-    } else{
-        console.log("Thank you, ", username.value)
-    }
-})
 
 // username.value
 
