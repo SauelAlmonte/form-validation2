@@ -24,31 +24,49 @@ const usernameValue = username.value
 //     what should happen
 // }
 // Conditionals
-if(false){
-    // What should happen
-    console.log("Please enter your username!")
-    //Another function called
-    // alert("Please enter your username!")
-//     Alternative to If
-} else {
-    console.log("There is a value")
-}
+// if(usernameValue === ""){
+//     // What should happen
+//     console.log("Please enter your username!")
+//     //Another function called
+//     // alert("Please enter your username!")
+// //     Alternative to If
+// } else {
+//     console.log(usernameValue)
+// }
+
+// Step 4 other, it's ok
+
+
+// Step 5 Give feedback when we click
+
+const regForm = document.getElementById('registration-form');
+
+regForm.addEventListener('click', function(e){
+    e.preventDefault()
+    
+    if (username.value === ""){
+        console.log("Please enter username")
+    } else{
+        console.log("Thank you, ", username.value)
+    }
+})
+
 // username.value
 
 // Browser examples:
 // const todaysDate = prompt("What's today ?")
 // alert(todaysDate)
 // Email
-const email = document.getElementById("email")
-console.log(email)
-
-//Password
-const password = document.getElementById("password")
-console.log(password)
-
-// Password Confirm
-const password2 = document.getElementById("password-2")
-console.log(password2)
+// const email = document.getElementById("email")
+// console.log(email)
+//
+// //Password
+// const password = document.getElementById("password")
+// console.log(password)
+//
+// // Password Confirm
+// const password2 = document.getElementById("password-2")
+// console.log(password2)
 
 // Steps
 // 1. Grab the DOM section
