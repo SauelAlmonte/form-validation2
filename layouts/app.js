@@ -9,11 +9,25 @@
 // Use
 
 // username
+
 // Step 1 Get DOM element
 
+//Username
 const regForm = document.getElementById('registration-form');
 const username = document.getElementById("username");
 const usernameErr = username.nextElementSibling
+
+//Email
+const email = document.getElementById('email')
+const emailErr = email.nextElementSibling
+
+//Password
+const password = document.getElementById('password')
+const passwordErr = password.nextElementSibling
+
+//Password 2
+const password2 = document.getElementById('password2')
+const password2Err = password2.nextElementSibling
 
 // Step 2 add event / modification
 
@@ -25,10 +39,37 @@ regForm.addEventListener('click', function(e){
 // Step 3 Check if the value is empty
     if (username.value === ""){
 // Step 4 If empty Give feedback
-//         usernameErr.className = 'block bg-red-500 text-white'
-        console.log("Please enter username") // in browser
+        usernameErr.className = 'block bg-red-500 text-white' // in browser
+//         console.log("Please enter username")
     } else{
         console.log("Thank you, ", username.value)
+    }
+
+    // Email
+    if (email.value === ""){
+// Step 4 If empty Give feedback
+        emailErr.className = 'block bg-red-500 text-white' // in browser
+//         console.log("Please enter username")
+    } else{
+        console.log("Thank you, ", email.value)
+    }
+
+    // Password
+    if (password.value === ""){
+// Step 4 If empty Give feedback
+        passwordErr.className = 'block bg-red-500 text-white' // in browser
+//         console.log("Please enter username")
+    } else{
+        console.log("Thank you, ", password.value)
+    }
+
+    // Password 2
+    if (password2.value === ""){
+// Step 4 If empty Give feedback
+        password2Err.className = 'block bg-red-500 text-white' // in browser
+//         console.log("Please enter username")
+    } else{
+        console.log("Thank you, ", password2.value)
     }
 })
 
