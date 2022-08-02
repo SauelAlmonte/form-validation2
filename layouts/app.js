@@ -9,11 +9,11 @@
 // Use
 
 // username
-// Step 1
+// Step 1 Get DOM element
 const username = document.getElementById("username")
-
+const usernameErr = username.nextElementSibling
 const usernameValue = username.value
-// Step 2
+// Step 2 add event / modification
 // console.log(usernameValue)
 
 // Step 3 If empty Give feedback
@@ -45,7 +45,8 @@ regForm.addEventListener('click', function(e){
     e.preventDefault()
     // Step 3 If empty Give feedback
     if (username.value === ""){
-        console.log("Please enter username")
+        usernameErr.className = 'block bg-red-500 text-white'
+        // console.log("Please enter username")
     } else{
         console.log("Thank you, ", username.value)
     }
