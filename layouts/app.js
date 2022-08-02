@@ -16,7 +16,7 @@ const usernameValue = username.value
 // Step 2
 // console.log(usernameValue)
 
-// Step 3 If empty
+// Step 3 If empty Give feedback
 // A conditional step is required
 // A conditional step is required
 // example
@@ -43,7 +43,7 @@ const regForm = document.getElementById('registration-form');
 
 regForm.addEventListener('click', function(e){
     e.preventDefault()
-    
+    // Step 3 If empty Give feedback
     if (username.value === ""){
         console.log("Please enter username")
     } else{
