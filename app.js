@@ -31,21 +31,6 @@ const password2Err = password2.nextElementSibling
 
 // Step 2 add event / modification
 
-username.addEventListener('blur', function (e){
-    e.preventDefault()
-    console.log("You are now in blur")
-})
-
-username.addEventListener('focus', function (e){
-    e.preventDefault()
-    console.log("You are now in focus")
-})
-
-username.addEventListener('mouseover', function (e){
-    e.preventDefault()
-    console.log("your mouse moved over me")
-})
-
 regForm.addEventListener('click', function(e){
     e.preventDefault()
 
