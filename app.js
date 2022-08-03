@@ -14,6 +14,8 @@
 
 //Username
 const regForm = document.getElementById('registration-form');
+
+//Username
 const username = document.getElementById("username");
 const usernameErr = username.nextElementSibling
 
