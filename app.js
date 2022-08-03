@@ -17,6 +17,15 @@ const regForm = document.getElementById('registration-form');
 const username = document.getElementById("username");
 const usernameErr = username.nextElementSibling
 
+console.log("1st one: ",username)
+username.addEventListener('blur', function (e){
+    if (username.value !== '') {
+        console.log("2nd one: ", e.target)
+        console.log("Current Value: ", e.target.value)
+    }
+})
+
+
 //Email
 const email = document.getElementById('email')
 const emailErr = email.nextElementSibling
@@ -39,7 +48,7 @@ regForm.addEventListener('click', function(e){
 // Step 3 Check if the value is empty
     if (username.value === ""){
 // Step 4 If empty Give feedback
-        usernameErr.className = 'block bg-red-500 text-white' // in browser
+        usernameErr.className = 'error' // in browser
 //         console.log("Please enter username")
     } else{
         console.log("Thank you, ", username.value)
@@ -48,7 +57,7 @@ regForm.addEventListener('click', function(e){
     // Email
     if (email.value === ""){
 // Step 4 If empty Give feedback
-        emailErr.className = 'block bg-red-500 text-white' // in browser
+        emailErr.className = 'error' // in browser
 //         console.log("Please enter username")
     } else{
         console.log("Thank you, ", email.value)
@@ -57,7 +66,7 @@ regForm.addEventListener('click', function(e){
     // Password
     if (password.value === ""){
 // Step 4 If empty Give feedback
-        passwordErr.className = 'block bg-red-500 text-white' // in browser
+        passwordErr.className = 'error' // in browser
 //         console.log("Please enter username")
     } else{
         console.log("Thank you, ", password.value)
@@ -66,7 +75,7 @@ regForm.addEventListener('click', function(e){
     // Password 2
     if (password2.value === ""){
 // Step 4 If empty Give feedback
-        password2Err.className = 'block bg-red-500 text-white' // in browser
+        password2Err.className = 'error' // in browser
 //         console.log("Please enter username")
     } else{
         console.log("Thank you, ", password2.value)

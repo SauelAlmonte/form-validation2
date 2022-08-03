@@ -5,6 +5,12 @@
     .base-input {
         @apply border-b-2 border-gray-300 outline-none focus:border-gray-600;
     }
+    .error {
+        @apply block bg-red-500 text-white
+    }
+    .success {
+        @apply bg-green-500 text-black
+    }
 }
 
 @tailwind utilities;
