@@ -17,11 +17,13 @@ const regForm = document.getElementById('registration-form');
 const username = document.getElementById("username");
 const usernameErr = username.nextElementSibling
 
-console.log("1st one: ",username)
 username.addEventListener('blur', function (e){
     if (username.value !== '') {
-        console.log("2nd one: ", e.target)
-        console.log("Current Value: ", e.target.value)
+        // console.log("2nd one: ", e.target)
+        console.log(e.target.nextElementSibling)
+        // e.target // gets username element
+        // e.target.nextElementSibling // gets next sibling around the current element
+        e.target.nextElementSibling.className = 'success'
     }
 })
 
@@ -46,6 +48,8 @@ regForm.addEventListener('click', function(e){
 // const usernameValue = username.value
 
 // Step 3 Check if the value is empty
+
+    // Username
     if (username.value === ""){
 // Step 4 If empty Give feedback
         usernameErr.className = 'error' // in browser
