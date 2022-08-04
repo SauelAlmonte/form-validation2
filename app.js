@@ -13,17 +13,16 @@
 // Step 1 Get DOM element
 
 //Username
-const regForm = document.getElementById('registration-form');
+const regForm = document.getElementById('registration-form')
 
-//Username
-const username = document.getElementById("username");
+const username = document.getElementById("username")
 const usernameErr = username.nextElementSibling
-const usernameSuccess = username.nextElementSibling.innerHTML
 
 username.addEventListener('blur', function (e){
-    if (username.value !== '') {
-        // e.target.nextElementSibling.className = 'success'
-        e.target.nextElementSibling.innerHTML = '<small class="success">✔️ Success</small>'
+    if(username.value !== '') {
+        // console.log("Current Value: ", e.target.value)
+        console.log(e.target.nextElementSibling)
+        e.target.nextElementSibling.className = 'success'
     }
 })
 
@@ -53,9 +52,9 @@ regForm.addEventListener('click', function(e){
 // Step 4 If empty Give feedback
         usernameErr.className = 'error' // in browser
 //         console.log("Please enter username")
-    } //else{
-        //console.log("Thank you, ", username.value)
-    //}
+    } else{
+        console.log("Thank you, ", username.value)
+    }
 
     // Email
     if (email.value === ""){
