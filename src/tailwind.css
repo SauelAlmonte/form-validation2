@@ -9,7 +9,7 @@
         @apply block bg-red-500 text-white p-2
     }
     .success {
-        @apply block bg-green-500 text-black p-2
+        @apply block bg-green-500 text-white p-2
     }
 }
 

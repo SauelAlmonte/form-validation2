@@ -18,17 +18,14 @@ const regForm = document.getElementById('registration-form');
 //Username
 const username = document.getElementById("username");
 const usernameErr = username.nextElementSibling
+const usernameSuccess = username.nextElementSibling.innerHTML
 
 username.addEventListener('blur', function (e){
     if (username.value !== '') {
-        // console.log("2nd one: ", e.target)
-        console.log(e.target.nextElementSibling)
-        // e.target // gets username element
-        // e.target.nextElementSibling // gets next sibling around the current element
-        e.target.nextElementSibling.className = 'success'
+        // e.target.nextElementSibling.className = 'success'
+        e.target.nextElementSibling.innerHTML = '<small class="success">✔️ Success</small>'
     }
 })
-
 
 //Email
 const email = document.getElementById('email')
@@ -56,9 +53,9 @@ regForm.addEventListener('click', function(e){
 // Step 4 If empty Give feedback
         usernameErr.className = 'error' // in browser
 //         console.log("Please enter username")
-    } else{
-        console.log("Thank you, ", username.value)
-    }
+    } //else{
+        //console.log("Thank you, ", username.value)
+    //}
 
     // Email
     if (email.value === ""){
