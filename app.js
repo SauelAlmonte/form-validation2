@@ -20,15 +20,19 @@ const usernameErr = username.nextElementSibling
 
 username.addEventListener('blur', function (e){
     if(username.value !== '') {
-        // console.log("Current Value: ", e.target.value)
-        console.log(e.target.nextElementSibling)
-        e.target.nextElementSibling.className = 'success'
+        e.target.nextElementSibling.innerHTML = '<small class="success">✔ complete</small>'
     }
 })
 
 //Email
 const email = document.getElementById('email')
 const emailErr = email.nextElementSibling
+
+email.addEventListener('blur', function (e){
+    if(email.value !== '') {
+        e.target.nextElementSibling.innerHTML = '<small class="success">✔ complete</small>'
+    }
+})
 
 //Password
 const password = document.getElementById('password')
@@ -50,7 +54,7 @@ regForm.addEventListener('click', function(e){
     // Username
     if (username.value === ""){
 // Step 4 If empty Give feedback
-        usernameErr.className = 'error' // in browser
+        usernameErr.innerHTML = '<small class="error">✗ Please Enter Username</small>' // in browser
 //         console.log("Please enter username")
     } else{
         console.log("Thank you, ", username.value)
@@ -59,7 +63,7 @@ regForm.addEventListener('click', function(e){
     // Email
     if (email.value === ""){
 // Step 4 If empty Give feedback
-        emailErr.className = 'error' // in browser
+        emailErr.innerHTML = '<small class="error">✗ Please Enter Email</small>' // in browser
 //         console.log("Please enter username")
     } else{
         console.log("Thank you, ", email.value)
@@ -68,7 +72,7 @@ regForm.addEventListener('click', function(e){
     // Password
     if (password.value === ""){
 // Step 4 If empty Give feedback
-        passwordErr.className = 'error' // in browser
+        passwordErr.innerHTML = '<small class="error">✗ Please Enter Password</small>' // in browser
 //         console.log("Please enter username")
     } else{
         console.log("Thank you, ", password.value)
@@ -77,7 +81,7 @@ regForm.addEventListener('click', function(e){
     // Password 2
     if (password2.value === ""){
 // Step 4 If empty Give feedback
-        password2Err.className = 'error' // in browser
+        password2Err.innerHTML = '<small class="error">✗ Please Confirm Password</small>' // in browser
 //         console.log("Please enter username")
     } else{
         console.log("Thank you, ", password2.value)
