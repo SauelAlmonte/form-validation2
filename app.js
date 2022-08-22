@@ -18,21 +18,22 @@ const regForm = document.getElementById('registration-form')
 const username = document.getElementById("username")
 const usernameErr = username.nextElementSibling
 
-username.addEventListener('blur', function (e){
-    if(username.value !== '') {
-        e.target.nextElementSibling.innerHTML = '<small class="success">✔ complete</small>'
-    }
-})
+showError(username)
+showError(document.getElementById("email"))
+showError(document.getElementById("password"))
+showError(document.getElementById("password2"))
+
+function showError(inputElement){
+    inputElement.addEventListener('blur', function (e){
+        if(inputElement.value !== '') {
+            e.target.nextElementSibling.innerHTML = '<small class="success">✔ complete</small>'
+        }
+    })
+}
 
 //Email
 const email = document.getElementById('email')
 const emailErr = email.nextElementSibling
-
-email.addEventListener('blur', function (e){
-    if(email.value !== '') {
-        e.target.nextElementSibling.innerHTML = '<small class="success">✔ complete</small>'
-    }
-})
 
 //Password
 const password = document.getElementById('password')
