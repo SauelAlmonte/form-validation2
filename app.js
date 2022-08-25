@@ -54,6 +54,7 @@ regForm.addEventListener('click', function(e){
     }
 })
 
+// Show a message with error
 function validateEmpty(input){
     input.addEventListener('blur', function (e){
         if(input.value !== '') {
@@ -61,3 +62,5 @@ function validateEmpty(input){
         }
     })
 }
+
+// Show a message with success
