@@ -1,5 +1,5 @@
 // Registration Form
-const regForm = document.getElementById('registration-form')
+const form = document.getElementById('registration-form')
 
 //Username
 const username = document.getElementById("username")
@@ -17,17 +17,15 @@ const passwordErr = password.nextElementSibling
 const password2 = document.getElementById('password2')
 const password2Err = password2.nextElementSibling
 
-regForm.addEventListener('click', function(e){
+form.addEventListener('submit', function(e){
     e.preventDefault()
 
-    validateMinLength(username)
     validateEmpty(username)
     showError(usernameErr)
     showSuccess(username)
     validateEmpty(email)
     showError(emailErr)
     showSuccess(email)
-    validatePassMatch(password, password2)
     validateEmpty(password)
     showError(passwordErr)
     showSuccess(password)
@@ -94,12 +92,4 @@ function showSuccess(input){
             e.target.nextElementSibling.innerHTML = '<small class="success">✔ complete</small>'
         }
     })
-}
-
-function validateMinLength(username){
-
-}
-
-function validatePassMatch(password, password2){
-
 }
