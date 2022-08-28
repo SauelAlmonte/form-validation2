@@ -17,7 +17,7 @@ const passwordErr = password.nextElementSibling
 const password2 = document.getElementById('password2')
 const password2Err = password2.nextElementSibling
 
-form.addEventListener('submit', function(e){
+form.addEventListener('click', function(e){
     e.preventDefault()
 
     validateEmpty(username)
@@ -89,7 +89,7 @@ function showSuccess(input){
     input.addEventListener('blur', function (e){
         console.log('You are ready to submit')
         if(input.value !== '') {
-            e.target.nextElementSibling.innerHTML = '<small class="success">✔ complete</small>'
+            e.target.nextElementSibling.innerHTML = '<small class="success"> ✔ complete</small>'
         }
     })
 }
