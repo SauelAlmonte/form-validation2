@@ -21,7 +21,10 @@ form.addEventListener( 'click', function (e){
     e.preventDefault()
     validateEmpty(username)
     validateEmpty(email)
+    validateIsEmail(email)
     validateEmpty(password, password2)
+    validatePassMatch(password, password2)
+    validateMinLength(user)
 
 })
 
@@ -63,3 +66,15 @@ function showSuccess(input) {
 //         }
 //     })
 // }
+
+function validateIsEmail(email) {
+    console.log('You are ready to submit...')
+}
+
+function validatePassMatch(password, password2) {
+
+}
+
+function validateMinLength (user) {
+
+}
