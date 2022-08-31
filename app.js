@@ -5,39 +5,38 @@ const form = document.getElementById('registration-form')
 const username = document.getElementById('username')
 // const usernameErr = username.nextElementSibling
 
-// //Email
-// const email = document.getElementById('email')
-// const emailErr = email.nextElementSibling
-//
-// //Password
-// const password = document.getElementById('password')
-// const passwordErr = password.nextElementSibling
-//
-// //Password 2
-// const password2 = document.getElementById('password2')
-// const password2Err = password2.nextElementSibling
+// Email
+const email = document.getElementById('email')
+// const emailErr = username.nextElementSibling
 
-form.addEventListener('submit', function(e){
+// Password
+const password = document.getElementById('password')
+// const emailErr = username.nextElementSibling
+
+// Email
+const password2 = document.getElementById('password2')
+// const emailErr = username.nextElementSibling
+
+form.addEventListener( 'click', function (e){
     e.preventDefault()
-    showError()
+    validateEmpty(username)
+    validateEmpty(email)
+    validateEmpty(password, password2)
 
 })
 
-// function validateEmpty (input) {
-//     console.log(input)
-//     if (input.value === '') {
-//         showError(input)
-//     } else {
-//         showSuccess(input)
-//     }
-// }
+function validateEmpty(input){
+    console.log(input)
+    if (input.value === '') {
+        showError(input)
+    } else {
+        showSuccess(input)
+    }
+}
 
 // Show a message with error
-function showError(){
-    console.log("Form Submitted....")
-    if (username.value === '') {
-       console.log("Username is Empty")
-    }
+function showError(input) {
+    console.log("Username is Empty")
 }
 
 // function showError(input){
@@ -52,8 +51,8 @@ function showError(){
 
 // Show a message with success
 
-function showSuccess(){
-
+function showSuccess(input) {
+    console.log('You are ready to submit...')
 }
 
 // function showSuccess(input){
