@@ -27,7 +27,6 @@ form.addEventListener( 'click', function (e){
     validateIsEmail(email)
     validateEmail(email)
     validateMinLength (password, password2)
-
 })
 
 function validateEmpty(input) {
@@ -41,31 +40,29 @@ function validateEmpty(input) {
     } else {
         showSuccess(input,`${inputName} is entered`)
     }
-
 }
 
 // Show a message with error
 function showError(input, msg){
     // uses styling from tailwind.css file
     input.nextElementSibling.innerHTML = `<small class="error">${msg}</small>`
-
 }
 
 // Show a message with success
 
 function showSuccess(input,msg) {
     input.nextElementSibling.innerHTML =`<small class="success">${msg}</small>`
-
 }
 
 function validatePassMatch (password, password2) {
     if (password.value===password2.value && password.value!==''){
         showSuccess(password2,`${password.name} matches ${password2.name}`)
-    }else {
+    } else {
         showError(password2,'Error, not a match! Please re-enter the password')
     }
 }
 
+// Minimum Length
 function validateMinLength (input) {
     console.log(input.value.length)
     const inputName = input.name
@@ -77,6 +74,7 @@ function validateMinLength (input) {
     }
 }
 
+// Validate it is an email
 function validateIsEmail (email) {
     if (validateEmail(email)===true) { // return true
         showSuccess(email,'valid')
@@ -87,7 +85,7 @@ function validateIsEmail (email) {
 
 function validateEmail(email) {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    let result = re.test(String(email).toLowerCase())
+    const result = re.test(String(email).toLowerCase())
     console.log(result)
     return result
 
