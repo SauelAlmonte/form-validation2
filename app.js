@@ -49,11 +49,11 @@ function showError(input, msg){
 }
 
 // Show a message with success
-
 function showSuccess(input,msg) {
     input.nextElementSibling.innerHTML =`<small class="success">${msg}</small>`
 }
 
+// Validate Password Match
 function validatePassMatch (password, password2) {
     if (password.value===password2.value && password.value!==''){
         showSuccess(password2,`${password.name} matches ${password2.name}`)
@@ -67,21 +67,22 @@ function validateMinLength (input) {
     console.log(input.value.length)
     const inputName = input.name
     if (input.value.length < 4 && input.value===password.value){
-        showError(input, `${inputName} is too short`)
+        showError(input, `${inputName} too short`)
     } else {
-        showSuccess(input,`${inputName} is long enough`)
+        showSuccess(input,`${inputName} Valid`)
     }
 }
 
 // Validate it is an email
 function validateIsEmail (email) {
     if (validateEmail(email)===true) { // return true
-        showSuccess(email,'valid')
+        showSuccess(email,'Email is valid')
     } else {
         showError(email, 'Email is invalid')
     }
 }
 
+// Validate email
 function validateEmail(email) {
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(form.email.value)){
         return (true)
