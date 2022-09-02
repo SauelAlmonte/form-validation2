@@ -17,7 +17,7 @@ const password = document.getElementById('password')
 const password2 = document.getElementById('password2')
 // const emailErr = username.nextElementSibling
 
-form.addEventListener( 'click', function (e){
+form.addEventListener( 'submit', function (e){
     e.preventDefault()
     validateEmpty(username)
     validateEmpty(email)
@@ -66,7 +66,6 @@ function validatePassMatch (password, password2) {
 function validateMinLength (input) {
     console.log(input.value.length)
     const inputName = input.name
-
     if (input.value.length < 4 && input.value===password.value){
         showError(input, `${inputName} is too short`)
     } else {
