@@ -552,6 +552,7 @@ video {
 }
 
 .base-input {
+  width: 6rem;
   border-bottom-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -562,6 +563,12 @@ video {
 .base-input:focus {
   --tw-border-opacity: 1;
   border-color: rgb(75 85 99 / var(--tw-border-opacity));
+}
+
+@media (min-width: 768px) {
+  .base-input {
+    width: 100%;
+  }
 }
 
 .success {

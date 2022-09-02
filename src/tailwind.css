@@ -3,7 +3,7 @@
 
 @layer components {
     .base-input {
-        @apply border-b-2 border-gray-300 outline-none focus:border-gray-600;
+        @apply w-24 md:w-full border-b-2 border-gray-300 outline-none focus:border-gray-600;
     }
 
     .success {
