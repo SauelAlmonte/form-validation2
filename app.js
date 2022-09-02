@@ -58,22 +58,6 @@ function showSuccess(input,msg) {
 
 }
 
-function validateIsEmail (email) {
-    if (validateIsEmail(email)===true) { // return true
-        showSuccess(email,'valid')
-    } else {
-        showError(email, 'Email is invalid')
-    }
-}
-
-function validateEmail(email) {
-    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    let result = re.test(String(email).toLowerCase())
-    console.log(result)
-    return result
-
-}
-
 function validatePassMatch (password, password2) {
     if (password.value===password2.value && password.value!==''){
         showSuccess(password2,`${password.name} matches ${password2.name}`)
@@ -91,4 +75,20 @@ function validateMinLength (input) {
     } else {
         showSuccess(input,`${inputName} is long enough`)
     }
+}
+
+function validateIsEmail (email) {
+    if (validateEmail(email)===true) { // return true
+        showSuccess(email,'valid')
+    } else {
+        showError(email, 'Email is invalid')
+    }
+}
+
+function validateEmail(email) {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    let result = re.test(String(email).toLowerCase())
+    console.log(result)
+    return result
+
 }
