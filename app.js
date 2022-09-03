@@ -26,7 +26,7 @@ form.addEventListener( 'submit', function (e){
     validatePassMatch(password,password2)
     validateIsEmail(email)
     validateEmail(email)
-    validateMinLength (password, password2)
+    validateMinLength(password, password2)
 })
 
 function validateEmpty(input) {
