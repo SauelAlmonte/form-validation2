@@ -33,7 +33,7 @@ The purpose of this form, is to validate the data being entered.
 
 To view form in action, please click this link -> [Form Validation](https://form-validation2.vercel.app/)
 
-Below you will see images of the form when all requirements are met or are not met.
+Below you will see images of the form when all requirements are met or not met.
 
 > Requirements are all met:
 
