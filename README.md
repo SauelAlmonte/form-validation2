@@ -58,4 +58,7 @@ What is [TailwindCSS?](https://tailwindcss.com/)
 
 *[TailwindCSS](https://tailwindcss.com/) is a utility first CSS Framework* that allows you to style/design, without leaving your html file.
 
+> Example: [index.html](https://github.com/SauelAlmonte/form-validation2/blob/main/index.html), 
+> To return to the main repo page, click form-validation2 link above index.html page.
 
+![](img/formvalidation2.png)
