@@ -37,4 +37,8 @@ Below you will see images of the form when all requirements are met or are not m
 
 > Requirements are all met:
 
-!![S](success.png)
+![](img/success.png)
+
+> Requirements are not met:
+
+![](img/error.png)
