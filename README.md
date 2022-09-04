@@ -73,4 +73,4 @@ What is [JavaScript?](https://en.wikipedia.org/wiki/JavaScript)
 
 ----------------------------------
 
-To view form in action, please click this link -> [Form Validation](https://form-validation2.vercel.app/)
+### To view this form in action, please click this link -> [Form Validation](https://form-validation2.vercel.app/)
