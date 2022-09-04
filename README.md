@@ -24,5 +24,17 @@ The purpose of this form, is to validate the data being entered.
 
 - Username field - Empty or Filled
 - Email field - Validate it is an email
-- Password Field's - Passwords Match
-- Meet minimum length requirements
+- Password Field's - Passwords match or do not match
+- Fields - Meet minimum length requirements
+
+----
+
+#### What happens if the field's meet all requirements or do not meet all requirements?
+
+To view form in action, please click this link -> [Form Validation](https://form-validation2.vercel.app/)
+
+Below you will see images of the form when all requirements are met or are not met.
+
+> Requirements are all met:
+
+!![S](success.png)
