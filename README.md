@@ -39,6 +39,14 @@ Below you will see images of the form when all requirements are met or are not m
 
 ![](img/success.png)
 
-> Requirements are not met:
+> Requirements not met:
 
 ![](img/error.png)
+
+> Some requirements met:
+
+![](img/some.png)
+
+-----------------------------
+
+#### What was used to create the form?
