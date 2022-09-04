@@ -29,7 +29,7 @@ The purpose of this form, is to validate the data being entered.
 
 ----
 
-#### What happens if the field's meet all requirements or do not meet all requirements?
+### What happens if the field's meet all requirements or do not meet all requirements?
 
 To view form in action, please click this link -> [Form Validation](https://form-validation2.vercel.app/)
 
@@ -49,4 +49,4 @@ Below you will see images of the form when all requirements are met or are not m
 
 -----------------------------
 
-#### What was used to create this form?
+### What was used to create this form?
