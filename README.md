@@ -49,4 +49,10 @@ Below you will see images of the form when all requirements are met or not met.
 
 -----------------------------
 
-### What was used to create this form?
+### What languages & frameworks were used to create this form?
+
+-----------------------------------
+[TailwindCSS](https://tailwindcss.com/) was used for the Frontend
+
+*TailwindCSS is a CSS Framework*
+
