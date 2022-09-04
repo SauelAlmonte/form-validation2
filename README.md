@@ -58,6 +58,4 @@ What is [TailwindCSS?](https://tailwindcss.com/)
 
 *[TailwindCSS](https://tailwindcss.com/) is a utility first CSS Framework* that allows you to style/design, without leaving your html file.
 
-> Example:
-
 
