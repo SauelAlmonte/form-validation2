@@ -62,3 +62,15 @@ What is [TailwindCSS?](https://tailwindcss.com/)
 > To return to the main repo page, click form-validation2 link above index.html page.
 
 ![](img/formvalidation2.png)
+
+-----------------------------
+
+[JavaScript](https://en.wikipedia.org/wiki/JavaScript) is the programming language used to make this form interactive.
+
+What is [JavaScript?](https://en.wikipedia.org/wiki/JavaScript)
+
+[JavaScript](https://en.wikipedia.org/wiki/JavaScript) is a programming language for the web, to calculate, manipulate & validate data. It can also update & change HTML as well as CSS.
+
+----------------------------------
+
+To view form in action, please click this link -> [Form Validation](https://form-validation2.vercel.app/)
