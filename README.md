@@ -14,7 +14,7 @@
 This project is an example of a : 
 - Registration Form
 - Login Form
-- Sign Up From
+- Sign Up Form
 
 These forms are used in everyday websites & applications.
 
