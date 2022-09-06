@@ -1,22 +1,6 @@
 // Registration Form
 const form = document.getElementById('registration-form')
 
-//Username
-const username = document.getElementById('username')
-// const usernameErr = username.nextElementSibling
-
-// Email
-const email = document.getElementById('email')
-// const emailErr = username.nextElementSibling
-
-// Password
-const password = document.getElementById('password')
-// const emailErr = username.nextElementSibling
-
-// Email
-const password2 = document.getElementById('password2')
-// const emailErr = username.nextElementSibling
-
 form.addEventListener( 'submit', function (e){
     e.preventDefault()
     validateEmpty(username)
@@ -29,6 +13,24 @@ form.addEventListener( 'submit', function (e){
     validateMinLength(password, password2)
 })
 
+//Username
+const username = document.getElementById('username')
+// const usernameErr = username.nextElementSibling
+
+// Email
+const email = document.getElementById('email')
+// const emailErr = username.nextElementSibling
+
+// Password
+const password = document.getElementById('password')
+// const emailErr = username.nextElementSibling
+
+// Password2
+const password2 = document.getElementById('password2')
+// const emailErr = username.nextElementSibling
+
+
+// Validating if empty
 function validateEmpty(input) {
     console.log(input.value)
     // declaration
@@ -42,24 +44,15 @@ function validateEmpty(input) {
     }
 }
 
-// Show a message with error
+// Show message with error
 function showError(input, msg){
     // uses styling from tailwind.css file
     input.nextElementSibling.innerHTML = `<small class="error">${msg}</small>`
 }
 
-// Show a message with success
+// Show message with success
 function showSuccess(input,msg) {
     input.nextElementSibling.innerHTML =`<small class="success">${msg}</small>`
-}
-
-// Validate it is an email
-function validateIsEmail (email) {
-    if (validateEmail(email)===true) { // return true
-        showSuccess(email,'Email is Valid')
-    } else {
-        showError(email, 'Email is Invalid')
-    }
 }
 
 // Validate email
@@ -68,6 +61,15 @@ function validateEmail (email) {
         return (true)
     } else {
         return (false)
+    }
+}
+
+// Validate it is an email
+function validateIsEmail (email) {
+    if (validateEmail(email)===true) { // return true
+        showSuccess(email,'Email is Valid')
+    } else {
+        showError(email, 'Email is Invalid')
     }
 }
 
@@ -84,7 +86,7 @@ function validatePassMatch (password, password2) {
 function validateMinLength (input) {
     console.log(input.value.length)
     const inputName = input.name
-    if (input.value.length < 4 && input.value===password.value){
+    if (input.value.length < 6 && input.value===password.value){
         showError(input, `${inputName} too short`)
     } else {
         showSuccess(input,`${inputName} Valid`)
