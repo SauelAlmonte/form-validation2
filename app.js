@@ -36,9 +36,9 @@ function validateEmpty(input) {
     //for empty value
     if (input.value ==='') {
         //functions for error or success
-        showError(input,`${inputName} field is empty`)
+        showError(input,`${inputName} Field is Empty!`)
     } else {
-        showSuccess(input,`${inputName} is entered`)
+        showSuccess(input,`${inputName} Field is Valid!`)
     }
 }
 
@@ -90,3 +90,4 @@ function validateEmail (email) {
         return (false)
     }
 }
+
