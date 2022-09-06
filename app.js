@@ -53,6 +53,24 @@ function showSuccess(input,msg) {
     input.nextElementSibling.innerHTML =`<small class="success">${msg}</small>`
 }
 
+// Validate it is an email
+function validateIsEmail (email) {
+    if (validateEmail(email)===true) { // return true
+        showSuccess(email,'Email is Valid')
+    } else {
+        showError(email, 'Email is Invalid')
+    }
+}
+
+// Validate email
+function validateEmail (email) {
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(form.email.value)){
+        return (true)
+    } else {
+        return (false)
+    }
+}
+
 // Validate Password Match
 function validatePassMatch (password, password2) {
     if (password.value===password2.value && password.value!==''){
@@ -73,21 +91,4 @@ function validateMinLength (input) {
     }
 }
 
-// Validate it is an email
-function validateIsEmail (email) {
-    if (validateEmail(email)===true) { // return true
-        showSuccess(email,'Email is Valid')
-    } else {
-        showError(email, 'Email is Invalid')
-    }
-}
-
-// Validate email
-function validateEmail (email) {
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(form.email.value)){
-        return (true)
-    } else {
-        return (false)
-    }
-}
 
