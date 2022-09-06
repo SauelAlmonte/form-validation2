@@ -36,9 +36,9 @@ function validateEmpty(input) {
     //for empty value
     if (input.value ==='') {
         //functions for error or success
-        showError(input,`${inputName} Field is Empty!`)
+        showError(input,`${inputName} is Empty!`)
     } else {
-        showSuccess(input,`${inputName} Field is Valid!`)
+        showSuccess(input,`${inputName} is Valid!`)
     }
 }
 
@@ -58,7 +58,7 @@ function validatePassMatch (password, password2) {
     if (password.value===password2.value && password.value!==''){
         showSuccess(password2,`${password.name} matches ${password2.name}`)
     } else {
-        showError(password2,'Error, not a match! Please re-enter the password')
+        showError(password2,'Not a match! Please re-enter the password')
     }
 }
 
@@ -76,9 +76,9 @@ function validateMinLength (input) {
 // Validate it is an email
 function validateIsEmail (email) {
     if (validateEmail(email)===true) { // return true
-        showSuccess(email,'Email is valid')
+        showSuccess(email,'Email is Valid')
     } else {
-        showError(email, 'Email is invalid')
+        showError(email, 'Email is Invalid')
     }
 }
 
