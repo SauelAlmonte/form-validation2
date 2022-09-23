@@ -87,7 +87,7 @@ function validateMinLength (input) {
     console.log(input.value.length)
     const inputName = input.name
     if (input.value.length < 6 && input.value===password.value){
-        showError(input, `${inputName} too short`)
+        showError(input, `${inputName} Too short`)
     } else {
         showSuccess(input,`${inputName} Valid`)
     }
