@@ -80,7 +80,7 @@ function validatePassMatch (password, password2) {
     } else {
         showError(password2,'Not a match! Please re-enter the password')
     }
-}hg,g
+}
 
 // Minimum Length
 function validateMinLength (input) {
